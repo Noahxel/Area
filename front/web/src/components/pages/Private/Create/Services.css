@@ -1,0 +1,110 @@
+.service-txt {
+    font-weight: 750;
+    font-size: xx-large;
+    text-align: center;
+    left: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.services-container {
+    margin-right: 20%;
+    margin-left: 20%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.services-holder {
+    padding: 5%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-content-holder {
+    border-radius: 10px;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: 3%;
+    height: 20vh;
+    width: 95%;
+    max-width: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-logo-holder {
+    width: 25%;
+    min-width: 60px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-logo {
+    width: 100%;
+    height: auto;
+}
+
+.service-description {
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.selection-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor:pointer;
+}
+
+.service-searchbar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+    .btn--large {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .service-txt {
+        font-size:x-large;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+    .services-container {
+        margin-right: 7%;
+        margin-left: 7%;
+        height: fit-content;
+        margin-bottom: 15%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-main-container {
+        align-self: flex-start;
+        height: 90%;
+    }
+    .selection-button {
+        width: 85%;
+    }
+    .services-holder {
+        overflow: scroll;
+        padding-bottom: 30%;
+    }
+}

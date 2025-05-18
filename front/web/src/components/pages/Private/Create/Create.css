@@ -1,0 +1,194 @@
+.cancel-bar {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 3%;
+}
+
+.ifttt-error-message {
+    color: red;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    align-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.ifttt-delete-applet {
+    margin-left: 3%;
+    padding: 1%;
+    width: 8%;
+    border: none;
+    outline: none;
+    background: none;
+    overflow: hidden;
+    cursor: pointer;
+}  
+
+.back-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    cursor: pointer;
+    height: 50%;
+    width: 5rem;
+    border: 1px solid;
+    color: black;
+    border-radius: 60px;
+    text-align: center;
+}
+
+.ifttt-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.thin-line {
+    height: 1px;
+    opacity: 0.2;
+    width: 100%;
+    background-color: black;
+}
+
+.ifttt {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 10%;
+    align-items: center;
+}
+
+.ifttt-link-line {
+    opacity: 0.2;
+    height: 10vh;
+    width: 5px;
+    align-self: center;
+    background-color: black;
+}
+
+.ifttt-rectangle {
+    height: 10vh;
+    width: 30vw;
+    background-color: black;
+    border-radius: 10px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.ifttt-rectangle-text {
+    align-self: center;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+    font-weight: 650;
+}
+
+.add-action-btn {
+    width: 6.5rem;
+    background-color: white;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.add-then-button {
+    width: 6.5rem;
+    height: 4vh;
+    background-color: white;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    font-size: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.horizontal-spacer {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.ifttt-add-btn-link {
+    text-decoration: none;
+    display: flex;
+    height: 3.5rem;
+}
+
+.create-action-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-action-name {
+    color: white;
+    max-width: 100%;
+    word-break: keep-all;
+    overflow: auto;
+    font-weight: bolder;
+}
+
+.create-container {
+    height: 100%;
+    overflow: scroll;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width: 960px) {
+    .ifttt {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .ifttt-rectangle {
+        height: 10vh;
+        width: 70%;
+    }
+
+    .ifttt-rectangle-text {
+        font-size: 120%;
+    }
+
+    .ifttt-rectangle {
+        height: 10vh;
+        width: 80vw;
+    }
+    .create-container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+    .ifttt {
+        padding-left: 0%;
+        padding-right: 0%;
+        justify-content: center;
+        padding-top: 0;
+        width: 50%;
+    }
+    .ifttt-container {
+        height: 60%;
+        width: 100%;
+    }
+    .ifttt-rectangle {
+        width: 100%;
+        height: 30%;
+    }
+}

@@ -1,0 +1,97 @@
+:root {
+    --primary : #fff;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 60px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-mobile {
+    text-decoration: none;
+}
+
+.btn--primary {
+    background-color: var(--primary);
+    color: #1D1D1D;
+    border: 1px solid var(--primary);
+}
+
+.btn--outline {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
+
+.btn--medium {
+    padding: 15px 37px;
+    font-size: 20px;
+}
+
+.btn--large {
+    padding: 20px 57px;
+    font-size: 30px;
+}
+
+.btn--medium:hover,
+.btn--large:hover {
+    background: #fff;
+    color: #1D1D1D;
+    transition: all 0.3s ease-out;
+}
+
+.btn--primary-inverted {
+    background-color: #1D1D1D;
+    color: #fff;
+}
+
+.btn--primary-inverted:hover {
+    background-color: #1D1D1D;
+    color: #fff;
+    border: 1px solid white;
+    transition: all 0.3s ease-out;
+}
+
+.bordered-button {
+    border: 2px solid;
+    color: black;
+}
+
+@media screen and (max-width: 960px) {
+    .btn--large {
+        font-size: 15px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .btn--medium {
+        font-size: 12px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+    .btn--large {
+        font-size: 15px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .btn--medium {
+        font-size: 15px;
+    }
+}

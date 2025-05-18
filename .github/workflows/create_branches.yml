@@ -1,0 +1,24 @@
+name: Create Feature Branches
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  createBranch:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.title, '[AUTOBRANCH]')
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create branch for task
+        run: |
+          PREFIX=$(echo "${{ github.event.issue.title }}" | awk -F '[][]' '{print $4}')
+          ISSUE_NUMBER=${{ github.event.issue.number }}
+          BRANCH_NAME=$(echo "${{ github.event.issue.title }}" | sed -E 's/\[AUTOBRANCH\]\[[A-Z]+\] //g' | tr ' ' '_')
+          FINAL_BRANCH_NAME="${PREFIX}-${ISSUE_NUMBER}-${BRANCH_NAME}"
+          git checkout -b $FINAL_BRANCH_NAME
+          git push -u origin $FINAL_BRANCH_NAME
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

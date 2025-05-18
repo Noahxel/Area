@@ -1,0 +1,100 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  margin-top: 0;
+  margin-bottom: 7%;
+}
+
+::placeholder {
+  color: lightgray;
+  font-weight: 900;
+}
+
+.button {
+  background-color: black;
+}
+
+.oauth {
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+
+.login-response-message {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+  color: red;
+}
+
+.login-title {
+  margin-bottom: 10%;
+}
+
+.login-auth {
+  font-weight: 500;
+  font-size: 25px;
+  margin-top: 10%;
+}
+
+.login-main-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  height: 60%;
+  padding: 40px;
+}
+
+.forgot-password {
+  font-size: 20px;
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .login-title {
+    margin-bottom: 2%;
+  }
+  .login-auth {
+    font-size: 16px;
+    margin-top: 2%;
+  }
+  .login-form {
+    margin-bottom: 0;
+  }
+  .login-container {
+    height: 90%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .login-form {
+    width: 70%;
+    height: 80%;
+  }
+  .forgot-password {
+    font-size: 15px;
+  }
+  .login-auth {
+    font-size: 20px;
+    margin-top: 2%;
+  }
+}

@@ -1,0 +1,21 @@
+.email-change-container {
+    height: 100%;
+    width: 100%;
+    margin-top: -10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-change-main-container {
+    height: 50%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confetti {
+    height: 100%;
+    width: 100%;
+}

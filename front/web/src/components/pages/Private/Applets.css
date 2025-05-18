@@ -1,0 +1,219 @@
+.applets-container {
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: auto;
+  position: absolute;
+}
+
+.anti-scrollbar{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.applets-searchbar {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .applets-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+}
+
+.applets-msg-holder {
+  margin-top: 7%;
+  justify-content: center;
+  display: flex;
+}
+
+.applets-msg {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 3.11111111rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 960px) {
+  .applets-msg {
+    font-size: 2rem;
+  }
+  .applets-section-elem {
+    font-size: 1rem;
+  }
+  .top-searchbar-holder {
+    width: 100%;
+    margin-top: 10% !important;
+    margin-bottom: 7% !important;
+  }
+}
+
+.top-searchbar-holder {
+  margin-top: 5% !important;
+  width: 55%;
+  height: 5.5vh;
+  display: flex;
+  margin: auto;
+  justify-content: center; 
+}
+
+.top-searchbar {
+  height: 110%;
+  width: 100%;
+  border: 0;
+  color: black;
+  outline: none;
+}
+
+.top-searchbar::placeholder {
+  opacity: 0.5;
+  color: black;
+  font-size: medium;
+}
+
+.top-searchbar-image {
+  align-self: center;
+  height: 80%;
+  width: auto;
+  opacity: 0.4;
+  margin-right: 4%;
+  margin-left: 1%;
+}
+
+.applets-holder {
+  padding: 5%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10%;
+}
+
+.applet-content-holder {
+  border-radius: 10px;
+  flex-grow: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+  margin: 1.5%;
+  height: 40vh;
+  width: 60%;
+  max-width: 35vh;
+}
+
+.applet-content-container {
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  margin-left: 6%;
+  margin-bottom: 0%;
+  padding: 1.5%;
+  padding-left: 2%;
+  border-radius: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.applet-logo {
+  width: auto;
+  height: 75%;
+  margin-left: 1rem;
+}
+
+.applet-description {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: white;
+  width: 85%;
+  margin-left: 10%;
+  padding-right: 5%;
+  overflow: auto;
+  height: 65%;
+  margin-bottom: 3%;
+}
+
+.delete-applet {
+  height: 100%;
+  width: auto;
+  border: none;
+  outline: none;
+  background: none;
+  overflow: hidden;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.bottom-btn-container {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.delete-applet-img {
+  width: 100%;
+  height: 100%;
+}
+
+.applet-status-on {
+  width: 18%;
+  height: 80%;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  bottom: 0;
+  padding: 1.2%;
+  margin-left: 52%;
+}
+
+.status {
+  transform: translateX(100px);
+}
+
+.applet-status-off {
+  width: 18%;
+  height: 80%;
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  bottom: 0;
+  padding: 1.2%;
+  margin-left: 52%;
+}
+
+.applet-status-ball {
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  border-radius: 100%;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.translated {
+  transform: translateX(120%);
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+  .applets-holder {
+    height: 100%;
+    padding: 1%;
+  }
+  .applet-content-holder {
+    border-radius: 10px;
+    width: 30%;
+  }
+  .applet-content-container {
+    border-radius: 5px;
+  }
+  .applet-description {
+    font-size: 10px;
+  }
+}

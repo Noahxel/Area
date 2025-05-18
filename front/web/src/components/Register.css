@@ -1,0 +1,90 @@
+.get-started {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    height: 70%;
+    padding: 40px;
+}
+
+.icon {
+    width: auto;
+    height: 100%;
+    padding: 4%;
+}
+
+.underline-text {
+    font-weight: 600;
+    text-underline-position: under;
+    text-decoration-line: underline;
+    cursor: pointer;
+    color: black;
+}
+
+.register-title {
+    margin-bottom: 10%;
+}
+
+.register-main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 40%;
+}
+
+.register-container {
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-auth {
+    margin-top: 10%;
+}
+
+.register-google {
+    height: 50px;
+    width: auto;
+}
+
+.register-form {
+    margin-top: 0;
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 960px) {
+    .get-started {
+        height: 80%;
+        padding: 0;
+    }
+    .register-main-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-height: 767px) and (orientation: landscape) {
+    .register-title {
+        margin-bottom: 2%;
+    }
+
+    .register-auth {
+        margin-top: 2%;
+    }
+
+    .register-google {
+        height: 30px;
+    }
+
+    .get-started {
+        height: 100%;
+    }
+    .register-form {
+        margin-bottom: 0;
+    }
+    .register-container {
+        height: 90%;
+    }
+}

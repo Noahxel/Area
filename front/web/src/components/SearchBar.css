@@ -1,0 +1,9 @@
+.applets-searchbar-holder {
+    width: 50%;
+}
+
+@media screen and (max-width: 960px) {
+    .applets-searchbar-holder {
+        width: 70%;
+    }
+}
